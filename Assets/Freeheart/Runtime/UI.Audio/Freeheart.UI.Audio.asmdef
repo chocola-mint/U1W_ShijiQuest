@@ -1,0 +1,19 @@
+{
+    "name": "Freeheart.UI.Audio",
+    "rootNamespace": "Freeheart.UI.Audio",
+    "references": [
+        "GUID:8dbfd571d4e9f6147934c9cbd67e113c",
+        "GUID:f39b2eef9143480458da98573bb1aaf3",
+        "GUID:1f8016b9aa71a1e4d9a29336d3d4d141",
+        "GUID:324caed91501a9c47a04ebfd87b68794"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

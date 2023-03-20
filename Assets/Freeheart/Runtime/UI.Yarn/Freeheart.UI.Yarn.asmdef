@@ -1,0 +1,20 @@
+{
+    "name": "Freeheart.UI.Yarn",
+    "rootNamespace": "Freeheart.UI.Yarn",
+    "references": [
+        "GUID:f39b2eef9143480458da98573bb1aaf3",
+        "GUID:8dbfd571d4e9f6147934c9cbd67e113c",
+        "GUID:34aa492b82754644eac2f903cd496268",
+        "GUID:2bafac87e7f4b9b418d9448d219b01ab",
+        "GUID:324caed91501a9c47a04ebfd87b68794"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
