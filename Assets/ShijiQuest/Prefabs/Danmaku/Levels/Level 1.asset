@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2426667ed6e0d5459ec9f03f1a27e04, type: 3}
+  m_Name: Level 1
+  m_EditorClassIdentifier: 
+  entries:
+  - weight: 1
+    danmakuPrefab: {fileID: 3454784059329691648, guid: bcb33a11846a52b4bbb616b31027602b, type: 3}
+  - weight: 1
+    danmakuPrefab: {fileID: 3454784059329691648, guid: 64f705f8bcb8fcc4aa8b195ca4055025, type: 3}
+  - weight: 1
+    danmakuPrefab: {fileID: 3454784059329691648, guid: ae8828c44eb1acb4ea64fa703a34d20e, type: 3}
+  - weight: 1
+    danmakuPrefab: {fileID: 3454784059329691648, guid: 6c11611b19c53fe4e97675373e8abbfa, type: 3}
+  - weight: 1
+    danmakuPrefab: {fileID: 3454784059329691648, guid: d1d823a44ab7d4f42ae3ff82dcec708a, type: 3}
+  - weight: 1
+    danmakuPrefab: {fileID: 3454784059329691648, guid: af203ad3f4c37e74c8b99bf79bd270cc, type: 3}

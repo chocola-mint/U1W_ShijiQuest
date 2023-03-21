@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: StreamerMood Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: StreamerMood
+  m_TableCollectionNameGuidString: 1c6b133877d66d845a97d57c4c13ad6e
+  m_Entries:
+  - m_Id: 43093078016
+    m_Key: Normal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 445104533504
+    m_Key: Irritated
+    m_Metadata:
+      m_Items: []
+  - m_Id: 517355614208
+    m_Key: Angry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 551371419648
+    m_Key: Happy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 585286561792
+    m_Key: Sad
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 862237484720062488
+  references:
+    version: 2
+    RefIds:
+    - rid: 862237484720062488
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1679320999212
