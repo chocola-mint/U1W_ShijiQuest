@@ -10,6 +10,7 @@ namespace ShijiQuest
     {
         [ReadOnly, System.NonSerialized]
         public float optionWeight = 0;
+        public virtual void AddWeight(float value) => optionWeight += value;
         public class SortAscending : IComparer<GameOption>
         {
             public int Compare(GameOption lhs, GameOption rhs)

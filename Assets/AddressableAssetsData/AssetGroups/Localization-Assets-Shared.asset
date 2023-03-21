@@ -29,6 +29,15 @@ MonoBehaviour:
     m_Address: Assets/Settings/Localization/Dialog/Battle Dialog Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+  - m_GUID: 5eee0ecca89e44843ae9a84c0a41df0e
+    m_Address: Assets/Settings/Localization/Keywords/Character Names Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: ff5d0bc08ce5c4e4b8ed99355facf576
+    m_Address: Assets/Settings/Localization/Dialog/Enemy/AKARIUSAGI/AkariUsagiDialog
+      Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 56077961582cdf2438585ef7fb24a888, type: 2}
   m_SchemaSet:

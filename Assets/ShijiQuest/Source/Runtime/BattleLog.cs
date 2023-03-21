@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using TMPro;
 
 namespace ShijiQuest
 {
     [RequireComponent(typeof(TMP_Text))]
-    public class BattleLog : MonoBehaviour
+    public class BattleLog : MonoBehaviour, ISubmitHandler
     {
         private TMP_Text display;
         private Queue<string> messageQueue = new();
@@ -58,6 +59,15 @@ namespace ShijiQuest
                 display.text = pendingMessage.Substring(0, messageCharPointer++);
                 nextPrintCharTime += actualPrintCharPeriod;
                 if(isNewLine) nextPrintCharTime += actualLinePausePeriod;
+            }
+        }
+
+        public void OnSubmit(BaseEventData eventData)
+        {
+            if(!done)
+            {
+                speedUp = true;
+                if(currentMessageDone) ShowNext();
             }
         }
     }

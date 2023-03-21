@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Battle Dialog_ja-JP
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: ja-JP
+  m_SharedData: {fileID: 11400000, guid: 785b599b81993ea409bf3436e05ffe8d, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 862237484720062530
+  m_TableData:
+  - m_Id: 8481681408
+    m_Localized: "{game.ENEMY}\u3000\u304C\u3000\u8972\u3063\u3066\u304D\u305F\u3002\n\u3069\u3046\u3059\u308B\uFF1F"
+    m_Metadata:
+      m_Items:
+      - rid: 862237484720062530
+  - m_Id: 116076676132864
+    m_Localized: "{game.PLAYER}\u3000\u304C\u3000\u5927\u5263\u3000\u3067\n\u653B\u6483\u3057\u305F\uFF01"
+    m_Metadata:
+      m_Items:
+      - rid: 862237484720062530
+  - m_Id: 118411469008896
+    m_Localized: "{game.PLAYER}\u3000\u304C\u3000\u5B88\u308A\u3092\u56FA\u3081\u305F\uFF01"
+    m_Metadata:
+      m_Items:
+      - rid: 862237484720062530
+  - m_Id: 119224278986752
+    m_Localized: "{game.PLAYER}\u3000\u304C\u3000{game.ITEM}\u3000\u3092\u4F7F\u3063\u305F\uFF01"
+    m_Metadata:
+      m_Items:
+      - rid: 862237484720062530
+  - m_Id: 119393477210112
+    m_Localized: "{game.PLAYER}\u3000\u304C\u3000{game.MAGIC}\u3000\u3092\u5531\u3048\u305F\uFF01"
+    m_Metadata:
+      m_Items:
+      - rid: 862237484720062530
+  - m_Id: 119608628228096
+    m_Localized: "{game.PLAYER}\u3000\u304C\u3000{game.DAMAGE}\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u98DF\u3089\u3063\u305F\uFF01"
+    m_Metadata:
+      m_Items:
+      - rid: 862237484720062530
+  - m_Id: 119896600752128
+    m_Localized: "{game.PLAYER}\u3000\u304C\u3000{game.HEALHP}\u3000\uFF28\uFF30\u3092\u56DE\u5FA9\u3057\u305F\uFF01"
+    m_Metadata:
+      m_Items:
+      - rid: 862237484720062530
+  - m_Id: 120137282498560
+    m_Localized: "{game.PLAYER}\u3000\u304C\u3000{game.HEALMP}\u3000\uFF2D\uFF30\u3092\u56DE\u5FA9\u3057\u305F\uFF01"
+    m_Metadata:
+      m_Items:
+      - rid: 862237484720062530
+  - m_Id: 120335610163200
+    m_Localized: "{game.PLAYER}\u3000\u304C\u3000\u6C17\u7D76\u3057\u305F\uFF01"
+    m_Metadata:
+      m_Items:
+      - rid: 862237484720062530
+  - m_Id: 126658275979264
+    m_Localized: "{game.ENEMY}\u3000\u3092\u3000\u5012\u3057\u305F\uFF01"
+    m_Metadata:
+      m_Items:
+      - rid: 862237484720062530
+  - m_Id: 126856716890112
+    m_Localized: "{game.DROP}\u3000\u3092\u3000\u62FE\u3063\u305F\uFF01"
+    m_Metadata:
+      m_Items:
+      - rid: 862237484720062530
+  - m_Id: 127013571276800
+    m_Localized: "{game.PLAYER}\u3000\u304C\u3000{game.GAINEXP}\u3000\u7D4C\u9A13\u5024\u3092\u3000\u3082\u3089\u3063\u305F\uFF01"
+    m_Metadata:
+      m_Items:
+      - rid: 862237484720062530
+  references:
+    version: 2
+    RefIds:
+    - rid: 862237484720062530
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00304c02d768000000308cf90100000000300c359269000000308cd1b16b00000030cc106f6c00000030cc75966c00000030cc8dc86c000000304c9a0b6d000000300ca4436d000000304cd1716d000000308ced3173000000308c21607300000030cca684730000

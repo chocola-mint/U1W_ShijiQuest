@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: AkariUsagiDialog Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: AkariUsagiDialog
+  m_TableCollectionNameGuidString: ff5d0bc08ce5c4e4b8ed99355facf576
+  m_Entries:
+  - m_Id: 82687307776
+    m_Key: Intro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 361579163648
+    m_Key: Attack 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 764219764736
+    m_Key: Attack 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1186187718656
+    m_Key: Attack 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1665181429760
+    m_Key: Hypnosis Pre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2694950170624
+    m_Key: Hypnosis 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3101327896576
+    m_Key: Hypnosis 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3319825969152
+    m_Key: Hypnosis 3
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 862237484720062533
+  references:
+    version: 2
+    RefIds:
+    - rid: 862237484720062533
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1679411518913

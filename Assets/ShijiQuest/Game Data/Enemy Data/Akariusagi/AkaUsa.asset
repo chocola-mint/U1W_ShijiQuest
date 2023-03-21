@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 784ca9aa9e730b8449d7e47d6bdc9dc9, type: 3}
+  m_Name: AkaUsa
+  m_EditorClassIdentifier: 
+  localizedName:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  prefab: {fileID: 8772765965384004956, guid: 9317ec9e92e015442b7d53831d5e95f2, type: 3}
+  HP: {fileID: 11400000, guid: a57c52ab22089a140a7fa1130e3e7c8e, type: 2}
+  MP: {fileID: 11400000, guid: d4cdb13b620a1844f83d96a440372b3c, type: 2}
+  ATK: {fileID: 11400000, guid: 3b8129db2c30d074f97783b3ed6410b9, type: 2}
+  DEF: {fileID: 11400000, guid: 1fcac67adcb0bf74b99a580c599ca751, type: 2}
+  MAG: {fileID: 11400000, guid: 39b290f551e64dd4e9a99ee063806157, type: 2}
+  MDEF: {fileID: 11400000, guid: 4960565cc6d98f040904070ad48172ee, type: 2}
+  receiveDamageBuffer: 0
+  receiveHPHealBuffer: 0
+  receiveMPHealBuffer: 0
+  ATKMod: 0
+  DEFMod: 0
+  MAGMod: 0
+  MDEFMod: 0
+  isDefending: 0
+  strongAgainst: []
+  weakAgainst:
+  - {fileID: 11400000, guid: 0984347d5d853b340bea7793c1adb0bc, type: 2}
+  strongAgainstMod: []
+  weakAgainstMod: []
+  inventory: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []

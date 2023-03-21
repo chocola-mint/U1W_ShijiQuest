@@ -29,6 +29,18 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-ja-JP
     - Preload
+  - m_GUID: c3e95729bdeaf204c9adae096fd34027
+    m_Address: CharacterNames_ja-JP
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ja-JP
+    - Preload
+  - m_GUID: c578cb78dee493e4a990700a2efa54ff
+    m_Address: AkariUsagiDialog_ja-JP
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ja-JP
+    - Preload
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 56077961582cdf2438585ef7fb24a888, type: 2}
   m_SchemaSet:
