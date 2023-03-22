@@ -15,5 +15,35 @@ MonoBehaviour:
   outerGameOption: {fileID: 11400000, guid: d23e478a367b05d418c2c88fe78e3fb5, type: 2}
   cost: 4
   user: {fileID: 11400000, guid: cbdf1096151ef8243a6493b52f4b2f75, type: 2}
+  localizedName:
+    m_TableReference:
+      m_TableCollectionName: GUID:c7f64b0b915c6ad49bc71c364c015389
+    m_TableEntryReference:
+      m_KeyId: 910483533824
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:c7f64b0b915c6ad49bc71c364c015389
+    m_TableEntryReference:
+      m_KeyId: 1457345277952
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  responseMessage:
+    m_TableReference:
+      m_TableCollectionName: GUID:785b599b81993ea409bf3436e05ffe8d
+    m_TableEntryReference:
+      m_KeyId: 119608628228096
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   power: 20
   elementType: {fileID: 11400000, guid: a7c2eef7748639e41a053eca084b5032, type: 2}
+  references:
+    version: 2
+    RefIds: []

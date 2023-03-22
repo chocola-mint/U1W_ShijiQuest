@@ -9,6 +9,13 @@ namespace ShijiQuest
     public class GameManager : ScriptableObject
     {
         private GameObject selectedGameObject;
+        [System.NonSerialized]
+        public bool endTurnSignal = false;
+        public int turnCounter = 0;
+        public void ResetTurnCounter() => turnCounter = 0;
+        public void IncrementTurnCounter() => turnCounter++;
+        public bool IsEvenTurn() => turnCounter % 2 == 0;
+        public bool IsOddTurn() => !IsEvenTurn();
         public void SetSelectedGameObject(GameObject GO)
         {
             selectedGameObject = GO;

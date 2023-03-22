@@ -22,6 +22,8 @@ namespace ShijiQuest
         public float actualPrintCharPeriod => speedUp ? printCharPeriod / speedUpFactor : printCharPeriod;
         public bool done => messageQueue.Count <= 0 && currentMessageDone;
         public bool currentMessageDone => messageCharPointer > pendingMessage.Length;
+        public bool isCleared => display.text.Length == 0 && pendingMessage.Length == 0;
+        public bool isDoneAndCleared => done && isCleared;
         public void Enqueue(string message)
         {
             messageQueue.Enqueue(message);
@@ -29,15 +31,18 @@ namespace ShijiQuest
         public void Clear()
         {
             display.text = "";
+            pendingMessage = "";
         }
         public void ShowNext()
         {
+            display.text = "";
             if(messageQueue.TryDequeue(out pendingMessage))
             {
                 messageCharPointer = 1;
                 speedUp = false;
                 nextPrintCharTime = Time.time + actualPrintCharPeriod;
             }
+            else pendingMessage = "";
         }
         private void Awake() 
         {

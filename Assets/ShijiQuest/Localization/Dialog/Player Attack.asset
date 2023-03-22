@@ -20,21 +20,7 @@ MonoBehaviour:
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
-    m_LocalVariables:
-    - name: PLAYER
-      variable:
-        rid: 862237484720062541
+    m_LocalVariables: []
   references:
     version: 2
-    RefIds:
-    - rid: 862237484720062541
-      type: {class: LocalizedString, ns: UnityEngine.Localization, asm: Unity.Localization}
-      data:
-        m_TableReference:
-          m_TableCollectionName: GUID:5eee0ecca89e44843ae9a84c0a41df0e
-        m_TableEntryReference:
-          m_KeyId: 8427155456
-          m_Key: 
-        m_FallbackState: 0
-        m_WaitForCompletion: 0
-        m_LocalVariables: []
+    RefIds: []

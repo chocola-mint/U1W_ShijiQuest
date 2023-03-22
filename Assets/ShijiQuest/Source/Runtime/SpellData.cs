@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Localization;
 using TriInspector;
 
 namespace ShijiQuest
@@ -11,6 +12,9 @@ namespace ShijiQuest
         public float cost = 0;
         [Required]
         public CharacterDataRef user;
+        public LocalizedString localizedName;
+        public LocalizedString localizedDescription;
+        public LocalizedString responseMessage;
         private AmountValue consumeValue => user.value.MP;
         public bool canUse => consumeValue.value >= cost;
         public void Use(CharacterDataRef target)

@@ -41,6 +41,18 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-ja-JP
     - Preload
+  - m_GUID: f319a9ac6335f2b4ea4d9a95ffd89fd4
+    m_Address: SpellInfo_ja-JP
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ja-JP
+    - Preload
+  - m_GUID: 2d7ea0fed13dffe4e904ec0315098380
+    m_Address: ItemInfo_ja-JP
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ja-JP
+    - Preload
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 56077961582cdf2438585ef7fb24a888, type: 2}
   m_SchemaSet:

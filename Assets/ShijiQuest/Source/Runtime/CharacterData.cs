@@ -53,5 +53,6 @@ namespace ShijiQuest
         [InlineEditor]
         public Inventory inventory;
         // todo: a group for spells available
+        public List<SpellData> spells = new();
     }
 }

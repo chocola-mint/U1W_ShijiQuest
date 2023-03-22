@@ -9,7 +9,7 @@ using TriInspector;
 namespace ShijiQuest
 {
     [RequireComponent(typeof(TMP_Text))]
-    public class MenuItem : MonoBehaviour, ISelectHandler, IDeselectHandler
+    public class MenuItem : MonoBehaviour, ISelectHandler, IDeselectHandler, ISubmitHandler
     {
         private TMP_Text display;
         [Required]
@@ -18,6 +18,7 @@ namespace ShijiQuest
         public string offPrefix = "・";
         [Required]
         public string onPrefix = "◎";
+        public event System.Action onSelect, onSubmit;
         private void Awake() 
         {
             TryGetComponent<TMP_Text>(out display);
@@ -33,10 +34,14 @@ namespace ShijiQuest
         {
         
         }
-
+        public void OnSubmit(BaseEventData eventData)
+        {
+            onSubmit?.Invoke();
+        }
         public void OnSelect(BaseEventData eventData)
         {
             display.text = $"{onPrefix}{itemName}";
+            onSelect?.Invoke();
         }
 
         public void OnDeselect(BaseEventData eventData)

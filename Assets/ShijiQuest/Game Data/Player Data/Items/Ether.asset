@@ -15,9 +15,39 @@ MonoBehaviour:
   outerGameOption: {fileID: 11400000, guid: 38850e54376020944b2763174897344a, type: 2}
   count: 1
   owner: {fileID: 11400000, guid: cbdf1096151ef8243a6493b52f4b2f75, type: 2}
+  localizedName:
+    m_TableReference:
+      m_TableCollectionName: GUID:b43dfeed0dc7c944e9da0fba34717c30
+    m_TableEntryReference:
+      m_KeyId: 215508332544
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:b43dfeed0dc7c944e9da0fba34717c30
+    m_TableEntryReference:
+      m_KeyId: 418537811968
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  responseMessage:
+    m_TableReference:
+      m_TableCollectionName: GUID:785b599b81993ea409bf3436e05ffe8d
+    m_TableEntryReference:
+      m_KeyId: 120137282498560
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   healHPAmount: 0
   healHPPercentage: 0.2
   useHPPercentage: 0
   healMPAmount: 0
   healMPPercentage: 0.3
   useMPPercentage: 1
+  references:
+    version: 2
+    RefIds: []

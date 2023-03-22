@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Localization;
 
 namespace ShijiQuest
 {
@@ -9,6 +10,9 @@ namespace ShijiQuest
         [Min(0)]
         public int count = 3;
         public CharacterDataRef owner;
+        public LocalizedString localizedName;
+        public LocalizedString localizedDescription;
+        public LocalizedString responseMessage;
         public bool IsInStock() => count > 0;
         public void Consume()
         {
