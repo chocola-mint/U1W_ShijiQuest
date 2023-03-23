@@ -1,29 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using static ChocoUtil.Algorithms.Random;
+using System.Linq;
 namespace ShijiQuest
 {
+    using WeightedOption = ChocoUtil.Algorithms.WeightedValue<GameOption>;
+
     [CreateAssetMenu(fileName = "GameOptionRanking", menuName = "ShijiQuest/GameOptionRanking")]
     public class GameOptionRanking : ScriptableObject
     {
-        private List<GameOption> gameOptions = new();
+        public List<GameOption> gameOptions = new();
         public void Clear() => gameOptions.Clear();
-        private bool dirty = false;
-        public void AddOption(GameOption gameOption) 
+        public void AddOption(GameOption gameOption, bool resetWeight = true) 
         { 
-            dirty = true;
-            gameOption.optionWeight = 0;
+            if(resetWeight)
+                gameOption.optionWeight = 1;
             gameOptions.Add(gameOption);
         }
-        public void AddOptions(IEnumerable<GameOption> options)
+        public void AddOptions(IEnumerable<GameOption> options, bool resetWeight = true)
         {
-            foreach(var option in options) AddOption(option);
+            foreach(var option in options) AddOption(option, resetWeight);
         }
         public bool Contains(GameOption gameOption) => gameOptions.Contains(gameOption);
         public int GetRank(GameOption gameOption)
         {
-            if(dirty) gameOptions.Sort(new GameOption.SortDescending());
+            gameOptions.Sort(new GameOption.SortDescending());
             return gameOptions.IndexOf(gameOption);
         }
         public float GetRankNormalized(GameOption gameOption)
@@ -33,8 +35,27 @@ namespace ShijiQuest
         }
         public GameOption GetFirst() 
         {
-            if(dirty) gameOptions.Sort(new GameOption.SortDescending());
+            gameOptions.Sort(new GameOption.SortDescending());
             return gameOptions[0];
+        }
+        public float GetFirstWeightNormalized()
+        {
+            if(gameOptions.Count == 1) return 1;
+            float sum = gameOptions.Sum(x => x.optionWeight);
+            if(Mathf.Approximately(sum, 0)) return 0;
+            return gameOptions.Max(x => x.optionWeight) / sum;
+        }
+        public GameOption GetWeightedRandom()
+        {
+            var wOptions = new WeightedOption[gameOptions.Count];
+            int i = 0;
+            foreach(var option in gameOptions)
+                wOptions[i++] = new(option.optionWeight, option);
+            return Select(wOptions);
+        }
+        public GameOption GetUnweightedRandom()
+        {
+            return gameOptions[Random.Range(0, gameOptions.Count)];
         }
         // Start is called before the first frame update
         void Start()

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2426667ed6e0d5459ec9f03f1a27e04, type: 3}
+  m_Name: Thunder
+  m_EditorClassIdentifier: 
+  entries:
+  - weight: 3
+    danmakuPrefab: {fileID: 2663227891499230755, guid: ce203ec64612851438e09bdffa24523c, type: 3}
+  - weight: 3
+    danmakuPrefab: {fileID: 2663227891499230755, guid: 6c6283a7695a548409bae5eba30332d5, type: 3}
+  - weight: 2
+    danmakuPrefab: {fileID: 2663227891499230755, guid: 83773fa751b81e843b15cdba2f6a64e1, type: 3}
+  - weight: 1
+    danmakuPrefab: {fileID: 2663227891499230755, guid: b98aa85cc1dc28c4eab6c57b1aa25b93, type: 3}

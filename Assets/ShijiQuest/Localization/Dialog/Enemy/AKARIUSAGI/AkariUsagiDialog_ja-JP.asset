@@ -20,43 +20,64 @@ MonoBehaviour:
     - rid: 862237484720062535
   m_TableData:
   - m_Id: 82687307776
-    m_Localized: "{0}\u3000\u304C\u3000\u8972\u3063\u3066\u304D\u305F\u3002\n\u3069\u3046\u3059\u308B\uFF1F"
+    m_Localized: "{game.ENEMY}\u3000\u304C\u3000\u8972\u3063\u3066\u304D\u305F\u3002\n\u3069\u3046\u3059\u308B\uFF1F"
     m_Metadata:
       m_Items:
       - rid: 862237484720062535
   - m_Id: 361579163648
-    m_Localized: "{0}\u3000\u304C\u3000\u6025\u306B\u3076\u3064\u304B\u3063\u3066\u304D\u305F\u3002"
+    m_Localized: "{game.ENEMY}\u3000\u304C\u3000\u6025\u306B\u3076\u3064\u304B\u3063\u3066\u304D\u305F\u3002"
     m_Metadata:
       m_Items:
       - rid: 862237484720062535
   - m_Id: 764219764736
-    m_Localized: "{0}\u3000\u304C\u3000\u6BB4\u3063\u3066\u304D\u305F\u3002"
+    m_Localized: "{game.ENEMY}\u3000\u304C\u3000\u6BB4\u3063\u3066\u304D\u305F\u3002"
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 862237484720062535
   - m_Id: 1186187718656
-    m_Localized: "{0}\u3000\u306E\u3000\u5730\u5473\u3060\u3051\u3069\u75DB\u3044\u653B\u6483\u3060\uFF01"
+    m_Localized: "{game.ENEMY}\u3000\u306E\u3000\u5730\u5473\u3060\u3051\u3069\u75DB\u3044\u653B\u6483\u3060\uFF01"
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 862237484720062535
   - m_Id: 1665181429760
-    m_Localized: "{0}\u3000\u306F\u3000\u306A\u306B\u304B\n\u4F01\u3093\u3067\u308B\u306E\u3088\u3046\u3060\uFF01"
+    m_Localized: "{game.ENEMY}\u3000\u306F\u3000\u306A\u306B\u304B\n\u4F01\u3093\u3067\u308B\u306E\u3088\u3046\u3060\uFF01"
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 862237484720062535
   - m_Id: 2694950170624
-    m_Localized: "{0}\u3000\u304C\u3000\u50AC\u7720\u8853\u3000\u3092\n\u4ED5\u639B\u3051\u305F\uFF01"
+    m_Localized: "{game.ENEMY}\u3000\u304C\u3000\u50AC\u7720\u8853\u3000\u3092\n\u4ED5\u639B\u3051\u305F\uFF01"
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 862237484720062535
   - m_Id: 3101327896576
-    m_Localized: "{0}\u3000\u306F\u3000\u50AC\u7720\u8853\u3067\n\u5BDD\u843D\u3061\u305F\uFF01"
+    m_Localized: "{game.PLAYER}\u3000\u306F\u3000\u50AC\u7720\u8853\u3067\n\u5BDD\u843D\u3061\u305F\uFF01"
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 862237484720062535
   - m_Id: 3319825969152
-    m_Localized: "{0}\u3000\u306F\u3000{1}\u3000\u306B\n\u3058\u3063\u304F\u308A\u98DF\u308F\u308C\u3066\u308B\u30FB\u30FB\u30FB"
+    m_Localized: "{game.PLAYER}\u3000\u306F\u3000{game.ENEMY}\u3000\u306B\n\u3058\u3063\u304F\u308A\u98DF\u308F\u308C\u3066\u308B\u30FB\u30FB\u30FB"
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 862237484720062535
+  - m_Id: 510907239903232
+    m_Localized: "{game.PLAYER}\u3000\u304C\u3000\u306A\u3093\u3068\u304B\u8010\u3048\u305F\uFF01"
+    m_Metadata:
+      m_Items:
+      - rid: 862237484720062535
+  - m_Id: 516667709599744
+    m_Localized: "{game.PLAYER}\u3000\u304C\u3000\u3084\u3063\u3068\u8D77\u304D\u305F\uFF01\n\u304A\u306F\u3088\u3046\uFF01"
+    m_Metadata:
+      m_Items:
+      - rid: 862237484720062535
+  - m_Id: 516999449686016
+    m_Localized: "{game.PLAYER}\u3000\u306F\u3000\u307E\u3060\u7720\u3063\u3066\u308B\u306E\u3088\u3046\u3060\u30FB\u30FB\u30FB"
+    m_Metadata:
+      m_Items:
+      - rid: 862237484720062535
   references:
     version: 2
     RefIds:
     - rid: 862237484720062535
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 00308c40130000000030cc2f54000000
+        m_Entries: 00308c40130000000030cc2f5400000000300cf50403000000308c15d202000000308c777302000000308cb48301000000304c2e1401000000300cefb100000000308cdcaad0010000304c13e8d5010000308c5035d60100

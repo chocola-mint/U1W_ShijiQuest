@@ -14,7 +14,8 @@ namespace ShijiQuest
             CharacterData target = subject.value;
             float baseDamage = user.trueATK;
             float defendFactor = target.isDefending ? 0.25f : 1;
-            float finalDamage = (baseDamage / target.trueDEF) * defendFactor;
+            float damageVariation = Random.Range(1.0f, 1.25f);
+            float finalDamage = (baseDamage * damageVariation / target.trueDEF) * defendFactor;
             float targetHPBefore = target.HP.value;
             target.HP.Set(Mathf.Floor(target.HP.value - finalDamage));
             target.receiveDamageBuffer = targetHPBefore - target.HP.value;
@@ -24,9 +25,10 @@ namespace ShijiQuest
             CharacterData user = value;
             CharacterData target = subject.value;
             float baseDamage = user.trueMAG + power;
+            float damageVariation = Random.Range(1.0f, 1.1f);
             float elementMod = elementType ? target.EvaluateElementMod(elementType) : 1;
             float defendFactor = target.isDefending ? 0.25f : 1;
-            float finalDamage = (baseDamage * elementMod / target.trueMDEF) * defendFactor;
+            float finalDamage = (baseDamage * damageVariation * elementMod / target.trueMDEF) * defendFactor;
             float targetHPBefore = target.HP.value;
             target.HP.Set(Mathf.Floor(target.HP.value - finalDamage));
             target.receiveDamageBuffer = targetHPBefore - target.HP.value;
@@ -36,8 +38,9 @@ namespace ShijiQuest
             if(!Mathf.Approximately(amount, 0))
             {
                 CharacterData owner = value;
+                float HPBefore = owner.HP.value;
                 owner.HP.Set(owner.HP.value + amount);
-                owner.receiveHPHealBuffer = amount;
+                owner.receiveHPHealBuffer = owner.HP.value - HPBefore;
             }
         }
         public void HealMP(float amount)
@@ -45,8 +48,9 @@ namespace ShijiQuest
             if(!Mathf.Approximately(amount, 0))
             {
                 CharacterData owner = value;
+                float MPBefore = owner.MP.value;
                 owner.MP.Set(owner.MP.value + amount);
-                owner.receiveMPHealBuffer = amount;
+                owner.receiveMPHealBuffer = owner.MP.value - MPBefore;
             }
         }
         public void StartDefending()
@@ -58,5 +62,6 @@ namespace ShijiQuest
             value.isDefending = false;
         }
         public bool IsDefending() => value.isDefending;
+        public bool IsDefeated() => Mathf.RoundToInt(value.HP.value) <= 0;
     }
 }

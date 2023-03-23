@@ -12,6 +12,9 @@ namespace ShijiQuest
         [System.NonSerialized]
         public bool endTurnSignal = false;
         public int turnCounter = 0;
+        [System.NonSerialized]
+        public BattleLog currentLog;
+        public CharacterDataRef player, enemy;
         public void ResetTurnCounter() => turnCounter = 0;
         public void IncrementTurnCounter() => turnCounter++;
         public bool IsEvenTurn() => turnCounter % 2 == 0;
@@ -28,6 +31,20 @@ namespace ShijiQuest
         public void ReinforceSelectLock()
         {
             EventSystem.current.SetSelectedGameObject(selectedGameObject);
+        }
+        public IEnumerator WaitForEvenTurn()
+        {
+            yield return waitUntilIsEvenTurn;
+        }
+        public IEnumerator WaitForOddTurn()
+        {
+            yield return waitUntilIsOddTurn;
+        }
+        private WaitUntil waitUntilIsEvenTurn, waitUntilIsOddTurn;
+        private void Awake() 
+        {
+            waitUntilIsEvenTurn = new WaitUntil(IsEvenTurn);
+            waitUntilIsOddTurn = new WaitUntil(IsOddTurn);
         }
     }
 }

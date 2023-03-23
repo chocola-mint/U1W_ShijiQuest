@@ -12,3 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c89f33da4553b204b8d579d33b5bc99d, type: 3}
   m_Name: GameManager
   m_EditorClassIdentifier: 
+  turnCounter: 0
+  player: {fileID: 11400000, guid: cbdf1096151ef8243a6493b52f4b2f75, type: 2}
+  enemy: {fileID: 11400000, guid: 4213e35d10b18d94299bd9dfb2cfb2be, type: 2}

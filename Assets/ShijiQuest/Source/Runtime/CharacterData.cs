@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Localization;
+using System.Linq;
 using TriInspector;
 
 namespace ShijiQuest
@@ -15,6 +16,22 @@ namespace ShijiQuest
         public AmountValue HP, MP;
         [Required, InlineEditor]
         public FloatValue ATK, DEF, MAG, MDEF;
+        public enum Status
+        {
+            Normal,
+            Asleep,
+        }
+        private Status previousStatus = Status.Normal;
+        [System.NonSerialized]
+        public Status status = Status.Normal;
+        public void AssignStatus(Status value)
+        {
+            previousStatus = status;
+            status = value;
+        }
+        public bool MatchStatus(Status value) => status == value;
+        public bool justWokeUp => previousStatus == Status.Asleep && status == Status.Normal;
+        public bool justFellAsleep => previousStatus == Status.Normal && status == Status.Asleep;
         public float receiveDamageBuffer = 0;
         public float receiveHPHealBuffer = 0;
         public float receiveMPHealBuffer = 0;
@@ -43,6 +60,7 @@ namespace ShijiQuest
         }
         public void ResetState()
         {
+            previousStatus = status = Status.Normal;
             HP.MaxOut();
             MP.MaxOut();
             ClearMods();
@@ -54,5 +72,6 @@ namespace ShijiQuest
         public Inventory inventory;
         // todo: a group for spells available
         public List<SpellData> spells = new();
+        public IEnumerable<SpellData> GetUsableSpells() => spells.Where(x => x.canUse);
     }
 }

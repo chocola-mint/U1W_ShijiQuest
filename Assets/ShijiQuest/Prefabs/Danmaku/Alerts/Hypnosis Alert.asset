@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2426667ed6e0d5459ec9f03f1a27e04, type: 3}
+  m_Name: Hypnosis Alert
+  m_EditorClassIdentifier: 
+  entries:
+  - weight: 3
+    danmakuPrefab: {fileID: 4092620849271216771, guid: 58d676ccbac558a4ba6768fe75e2dc45, type: 3}
+  - weight: 3
+    danmakuPrefab: {fileID: 4092620849271216771, guid: 57d4feb80e0eda143b15fca0a9bbe70e, type: 3}
+  - weight: 3
+    danmakuPrefab: {fileID: 4092620849271216771, guid: b135b0fd38a16684a99da6e165697297, type: 3}
+  - weight: 9
+    danmakuPrefab: {fileID: 4092620849271216771, guid: 65b4f4f33483abe4faddba3df1c7a3de, type: 3}
+  - weight: 10
+    danmakuPrefab: {fileID: 4092620849271216771, guid: c88e9b7a074b4664c9b79880492b7ef7, type: 3}

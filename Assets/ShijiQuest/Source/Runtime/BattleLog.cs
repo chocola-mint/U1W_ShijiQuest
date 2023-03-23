@@ -9,6 +9,7 @@ namespace ShijiQuest
     [RequireComponent(typeof(TMP_Text))]
     public class BattleLog : MonoBehaviour, ISubmitHandler
     {
+        public GameManager gameManager;
         private TMP_Text display;
         private Queue<string> messageQueue = new();
         private string pendingMessage = "";
@@ -26,7 +27,11 @@ namespace ShijiQuest
         public bool isDoneAndCleared => done && isCleared;
         public void Enqueue(string message)
         {
-            messageQueue.Enqueue(message);
+            var textInfo = display.GetTextInfo(message);
+            if(textInfo.pageCount > 1)
+                for(int i = 0; i < textInfo.pageCount; ++i)
+                    messageQueue.Enqueue(message.Substring(textInfo.pageInfo[i].firstCharacterIndex, textInfo.pageInfo[i].lastCharacterIndex - textInfo.pageInfo[i].firstCharacterIndex));
+            else messageQueue.Enqueue(message);
         }
         public void Clear()
         {
@@ -48,6 +53,12 @@ namespace ShijiQuest
         {
             TryGetComponent<TMP_Text>(out display);
             Clear();
+            gameManager.currentLog = this;
+            display.overflowMode = TextOverflowModes.Page;
+        }
+        private void OnDestroy() 
+        {
+            gameManager.currentLog = null;
         }
         // Start is called before the first frame update
         void Start()

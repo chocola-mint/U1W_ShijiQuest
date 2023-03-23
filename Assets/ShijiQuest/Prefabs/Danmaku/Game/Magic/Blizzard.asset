@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2426667ed6e0d5459ec9f03f1a27e04, type: 3}
+  m_Name: Blizzard
+  m_EditorClassIdentifier: 
+  entries:
+  - weight: 3
+    danmakuPrefab: {fileID: 2663227891499230755, guid: fcf0e272a8caf8e4f8ed36d6080b1008, type: 3}
+  - weight: 3
+    danmakuPrefab: {fileID: 2663227891499230755, guid: fa70a45bfbc827b44a80efc76dee0f63, type: 3}
+  - weight: 2
+    danmakuPrefab: {fileID: 2663227891499230755, guid: 5e6130896bbb5fe44854ef6f6bc4db71, type: 3}
+  - weight: 1
+    danmakuPrefab: {fileID: 2663227891499230755, guid: 609332bd8f515ee43b59de6b985b640a, type: 3}

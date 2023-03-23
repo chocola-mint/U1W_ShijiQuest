@@ -9,5 +9,6 @@ namespace ShijiQuest
     {
         public float value = 0;
         public virtual void Set(float value) => this.value = value;
+        public int AsInt() => Mathf.RoundToInt(value);
     }
 }

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2426667ed6e0d5459ec9f03f1a27e04, type: 3}
+  m_Name: Fire
+  m_EditorClassIdentifier: 
+  entries:
+  - weight: 3
+    danmakuPrefab: {fileID: 2663227891499230755, guid: eed2410efa70d034ca83d20a0ceaba54, type: 3}
+  - weight: 3
+    danmakuPrefab: {fileID: 2663227891499230755, guid: 8059902de8b10954799292a498241907, type: 3}
+  - weight: 2
+    danmakuPrefab: {fileID: 2663227891499230755, guid: 179765947913a224db9504ba14d23975, type: 3}
+  - weight: 1
+    danmakuPrefab: {fileID: 2663227891499230755, guid: fe63a047092f0ad4f9336fc333a09dd4, type: 3}

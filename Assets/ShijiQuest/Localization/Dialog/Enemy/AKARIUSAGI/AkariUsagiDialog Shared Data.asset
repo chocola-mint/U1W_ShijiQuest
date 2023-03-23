@@ -47,6 +47,18 @@ MonoBehaviour:
     m_Key: Hypnosis 3
     m_Metadata:
       m_Items: []
+  - m_Id: 510907239903232
+    m_Key: Hypnosis Fail
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516667709599744
+    m_Key: Hypnosis Wake Up
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516999449686016
+    m_Key: Hypnosis Continue
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

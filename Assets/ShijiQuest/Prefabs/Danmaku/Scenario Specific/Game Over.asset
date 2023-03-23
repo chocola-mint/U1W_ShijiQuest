@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2426667ed6e0d5459ec9f03f1a27e04, type: 3}
+  m_Name: Game Over
+  m_EditorClassIdentifier: 
+  entries:
+  - weight: 5
+    danmakuPrefab: {fileID: 4092620849271216771, guid: a1313d2e78e813345885a7b839dcdd07, type: 3}
+  - weight: 15
+    danmakuPrefab: {fileID: 4092620849271216771, guid: a912d2b909d2d984fbb40527a04d3345, type: 3}
+  - weight: 5
+    danmakuPrefab: {fileID: 4092620849271216771, guid: 6a54acfe94c313641869acdcdbbfdbe3, type: 3}
+  - weight: 5
+    danmakuPrefab: {fileID: 4092620849271216771, guid: 247739d751e2b9c41bdc1ddd14d2b52e, type: 3}

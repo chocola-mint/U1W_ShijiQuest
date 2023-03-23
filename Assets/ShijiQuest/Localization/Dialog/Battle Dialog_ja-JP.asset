@@ -60,7 +60,7 @@ MonoBehaviour:
       m_Items:
       - rid: 862237484720062530
   - m_Id: 120335610163200
-    m_Localized: "{game.PLAYER}\u3000\u304C\u3000\u6C17\u7D76\u3057\u305F\uFF01"
+    m_Localized: "{game.PLAYER}\u3000\u304C\u3000\u6C17\u7D76\u3057\u305F\u30FB\u30FB\u30FB"
     m_Metadata:
       m_Items:
       - rid: 862237484720062530

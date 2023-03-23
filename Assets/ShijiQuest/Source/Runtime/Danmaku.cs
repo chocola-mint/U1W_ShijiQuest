@@ -13,6 +13,8 @@ namespace ShijiQuest
     {
         [Required]
         public GameManager gameManager;
+        [TextArea, Required]
+        public string content = "";
         protected TMP_Text display;
         public AnimationCurve fadeCurve = AnimationCurve.Linear(0, 0, 1, 1);
         [Min(0.01f)]
@@ -22,6 +24,16 @@ namespace ShijiQuest
         public static readonly Vector2 moveDirection = Vector2.left;
         public const float maxLifetime = 10.0f;
         public event System.Action onClick;
+        [Range(minPositivity, maxPositivity)]
+        public float positivity = 2.5f;
+        public const float maxPositivity = 5, minPositivity = 0;
+        [Range(minAnnoyance, maxAnnoyance)]
+        public float annoyance = 1.0f;
+        public const float maxAnnoyance = 5, minAnnoyance = 0;
+        private void OnGUI() 
+        {
+            if(TryGetComponent<TMP_Text>(out display)) display.text = content;
+        }
         private void Awake() 
         {
             TryGetComponent<TMP_Text>(out display);
@@ -29,6 +41,7 @@ namespace ShijiQuest
         }
         private void Start() 
         {
+            display.text = content;
             var rt = transform as RectTransform;
             rt.Translate(Vector2.right * display.preferredWidth / 2);
         }

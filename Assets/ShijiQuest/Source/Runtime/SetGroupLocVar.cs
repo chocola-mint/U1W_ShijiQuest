@@ -30,7 +30,11 @@ namespace ShijiQuest
                 var varGroup = flow.GetValue<VariablesGroupAsset>(variableGroupInput);
                 var key = flow.GetValue<string>(keyInput);
                 var value = flow.GetValue<IVariable>(valueInput);
-                varGroup[key] = value;
+                if(!varGroup.TryAdd(key, value))
+                {
+                    varGroup.Remove(key);
+                    varGroup.Add(key, value);
+                }
                 return outputTrigger;
             });
             outputTrigger = ControlOutput("");

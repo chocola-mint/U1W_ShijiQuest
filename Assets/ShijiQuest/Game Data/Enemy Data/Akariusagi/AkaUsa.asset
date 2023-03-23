@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   localizedName:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:5eee0ecca89e44843ae9a84c0a41df0e
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 79264755712
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -42,6 +42,7 @@ MonoBehaviour:
   strongAgainstMod: []
   weakAgainstMod: []
   inventory: {fileID: 0}
+  spells: []
   references:
     version: 2
     RefIds: []

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 namespace ShijiQuest
 {
@@ -8,6 +9,7 @@ namespace ShijiQuest
     public class Inventory : ScriptableObject
     {
         public List<ItemData> items = new();
+        public IEnumerable<ItemData> GetUsableItems() => items.Where(x => x.IsInStock());
         public void Add(ItemData itemData)
         {
             itemData.count++;

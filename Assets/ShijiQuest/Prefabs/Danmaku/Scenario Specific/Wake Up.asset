@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2426667ed6e0d5459ec9f03f1a27e04, type: 3}
+  m_Name: Wake Up
+  m_EditorClassIdentifier: 
+  entries:
+  - weight: 15
+    danmakuPrefab: {fileID: 4092620849271216771, guid: df9131c7586c4904b8503a63c551b8b9, type: 3}
+  - weight: 15
+    danmakuPrefab: {fileID: 4092620849271216771, guid: 0997e51a733006c4281494acfc729c42, type: 3}
+  - weight: 5
+    danmakuPrefab: {fileID: 4092620849271216771, guid: 71a84258e305c2941a5b95267b086d94, type: 3}
+  - weight: 10
+    danmakuPrefab: {fileID: 4092620849271216771, guid: 28757917431278d44bd607ce4202d41e, type: 3}
