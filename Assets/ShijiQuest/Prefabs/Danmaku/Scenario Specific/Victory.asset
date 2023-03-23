@@ -10,12 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c2426667ed6e0d5459ec9f03f1a27e04, type: 3}
-  m_Name: Player Asleep
+  m_Name: Victory
   m_EditorClassIdentifier: 
   entries:
   - weight: 5
     danmakuPrefab: {fileID: 4092620849271216771, guid: df9131c7586c4904b8503a63c551b8b9, type: 3}
   - weight: 10
     danmakuPrefab: {fileID: 4092620849271216771, guid: 0997e51a733006c4281494acfc729c42, type: 3}
-  - weight: 10
+  - weight: 15
     danmakuPrefab: {fileID: 4092620849271216771, guid: 71a84258e305c2941a5b95267b086d94, type: 3}
+  - weight: 15
+    danmakuPrefab: {fileID: 4092620849271216771, guid: ad620eca09dc36d4f87a63bd807f9d7e, type: 3}
+  - weight: 10
+    danmakuPrefab: {fileID: 4092620849271216771, guid: 11072685f6626b049893f87d66035c47, type: 3}
+  - weight: 10
+    danmakuPrefab: {fileID: 4092620849271216771, guid: 0aa37c95813f4cc48a123e2aef94b342, type: 3}
+  - weight: 10
+    danmakuPrefab: {fileID: 4092620849271216771, guid: c8b23a480da6f1d42bb8bfc5f31851bc, type: 3}
+  - weight: 10
+    danmakuPrefab: {fileID: 4092620849271216771, guid: bc596a72b321fe24eb4f22dbab3f5f82, type: 3}
