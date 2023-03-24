@@ -33,6 +33,15 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  responseMessage:
+    m_TableReference:
+      m_TableCollectionName: GUID:785b599b81993ea409bf3436e05ffe8d
+    m_TableEntryReference:
+      m_KeyId: 119608628228096
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   power: 20
   elementType: {fileID: 11400000, guid: 0984347d5d853b340bea7793c1adb0bc, type: 2}
   references:

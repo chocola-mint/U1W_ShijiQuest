@@ -32,6 +32,7 @@ namespace ShijiQuest
                 for(int i = 0; i < textInfo.pageCount; ++i)
                     messageQueue.Enqueue(message.Substring(textInfo.pageInfo[i].firstCharacterIndex, textInfo.pageInfo[i].lastCharacterIndex - textInfo.pageInfo[i].firstCharacterIndex));
             else messageQueue.Enqueue(message);
+            // messageQueue.Enqueue(message);
         }
         public void Clear()
         {
@@ -40,6 +41,7 @@ namespace ShijiQuest
         }
         public void ShowNext()
         {
+            gameObject.SetActive(true);
             display.text = "";
             if(messageQueue.TryDequeue(out pendingMessage))
             {
@@ -76,15 +78,17 @@ namespace ShijiQuest
                 nextPrintCharTime += actualPrintCharPeriod;
                 if(isNewLine) nextPrintCharTime += actualLinePausePeriod;
             }
+
+            if(isDoneAndCleared) gameObject.SetActive(false);
         }
 
         public void OnSubmit(BaseEventData eventData)
         {
-            if(!done)
+            if(!currentMessageDone)
             {
                 speedUp = true;
-                if(currentMessageDone) ShowNext();
             }
+            else ShowNext();
         }
     }
 }

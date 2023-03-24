@@ -19,6 +19,8 @@ namespace ShijiQuest
         public GameObject optionPrefab;
         [Required]
         public TMP_Text MPInfoDisplay;
+        [Required]
+        public GameObject displayContainer;
         public SpellData selectedSpell;
         private int selectedIndex = 0;
         public void Load(int initialIndex = 0)
@@ -48,10 +50,10 @@ namespace ShijiQuest
         }
         public GameObject MoveIndex2D(int x, int y)
         {
-            int totalRows = transform.childCount;
+            int totalRows = optionContainer.childCount / 2;
             selectedIndex += x * totalRows + y;
-            selectedIndex = Mathf.RoundToInt(Mathf.Repeat(selectedIndex, transform.childCount)) % transform.childCount;
-            return transform.GetChild(selectedIndex).gameObject;
+            selectedIndex = Mathf.Clamp(selectedIndex, 0, optionContainer.childCount - 1);
+            return optionContainer.GetChild(selectedIndex).gameObject;
         }
         public GameObject RandomStep2D()
         {
@@ -63,25 +65,31 @@ namespace ShijiQuest
         {
             int currentX = selectedIndex / 2;
             int currentY = selectedIndex % 2;
-            int targetIndex = GetComponentsInChildren<TMP_Text>().Where(x => x.text == spellData.localizedName.GetLocalizedString()).First().transform.GetSiblingIndex();
+            int targetIndex = GetComponentsInChildren<MenuItem>().Where(x => x.itemName == spellData.localizedName.GetLocalizedString()).First().transform.GetSiblingIndex();
             int targetX = targetIndex / 2;
             int targetY = targetIndex % 2;
-            return MoveIndex2D((int)Mathf.Sign(targetX - currentX), (int)Mathf.Sign(targetY - currentY));
+            int x = targetX - currentX;
+            if(x != 0) x /= Mathf.Abs(x);
+            int y = targetY - currentY;
+            if(y != 0) y /= Mathf.Abs(y);
+            if(x != 0) y = 0;
+            return MoveIndex2D(x, y);
         }
         public GameObject ResetIndex()
         {
             selectedIndex = 0;
-            return transform.GetChild(selectedIndex).gameObject;
+            return optionContainer.GetChild(selectedIndex).gameObject;
         }
         public void Show()
         {
             gameObject.SetActive(true);
             MPInfoDisplay.text = "";
-            MPInfoDisplay.gameObject.SetActive(false);
+            displayContainer.gameObject.SetActive(true);
         }
         public void Hide()
         {
             gameObject.SetActive(false);
+            displayContainer.SetActive(false);
         }
     }
 }

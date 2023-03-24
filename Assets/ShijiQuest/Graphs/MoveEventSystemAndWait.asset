@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: MoveEventSystemAndWait
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[{"key":"In","label":null,"summary":null,"hideLabel":true}],"controlOutputDefinitions":[{"key":"Out","label":null,"summary":null,"hideLabel":true}],"valueInputDefinitions":[{"hasDefaultValue":true,"defaultValue":{"$content":"Left","$type":"UnityEngine.EventSystems.MoveDirection"},"_type":"UnityEngine.EventSystems.MoveDirection","key":"Direction","label":null,"summary":null,"hideLabel":false}],"valueOutputDefinitions":[],"title":"Move
+      Event System And Sync","summary":null,"pan":{"x":380.3889,"y":154.1111},"zoom":0.8,"elements":[{"defaultValues":{},"position":{"x":-290.0,"y":16.0},"guid":"53d33e52-16d5-475c-b061-fdc4a7dab77d","$version":"A","$type":"Unity.VisualScripting.GraphInput","$id":"12"},{"defaultValues":{},"position":{"x":482.0,"y":56.0},"guid":"b82bcdb1-1fc7-42aa-93c7-426470fd9491","$version":"A","$type":"Unity.VisualScripting.GraphOutput","$id":"14"},{"defaultValues":{"moveDirection":{"$content":"Left","$type":"UnityEngine.EventSystems.MoveDirection"},"eventSystem":{"$content":0,"$type":"UnityEngine.Object"}},"position":{"x":-114.0,"y":81.0},"guid":"5c57ff87-4943-47fd-b2ca-cb2eed73d844","$version":"A","$type":"ShijiQuest.MoveEventSystem","$id":"16"},{"member":{"name":"current","parameterTypes":null,"targetType":"UnityEngine.EventSystems.EventSystem","targetTypeName":"UnityEngine.EventSystems.EventSystem","$version":"A"},"defaultValues":{},"position":{"x":-338.0,"y":153.0},"guid":"a6528647-38aa-4c02-8653-6ef3d04a3f9a","$version":"A","$type":"Unity.VisualScripting.GetMember","$id":"18"},{"chainable":false,"parameterNames":[],"member":{"name":"SyncSelectedGameObject","parameterTypes":[],"targetType":"ShijiQuest.GameManager","targetTypeName":"ShijiQuest.GameManager","$version":"A"},"defaultValues":{"target":{"$content":1,"$type":"UnityEngine.Object"}},"position":{"x":225.0,"y":73.0},"guid":"71f5345d-6130-41aa-8c0f-9a9a401600e7","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"21"},{"sourceUnit":{"$ref":"16"},"sourceKey":"","destinationUnit":{"$ref":"21"},"destinationKey":"enter","guid":"92aba617-b967-4410-9439-c0512c6c342b","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"12"},"sourceKey":"In","destinationUnit":{"$ref":"16"},"destinationKey":"","guid":"3e478e85-1181-4499-a83d-e0ed492c1507","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"21"},"sourceKey":"exit","destinationUnit":{"$ref":"14"},"destinationKey":"Out","guid":"cd4074c6-5012-4789-905c-9b7c1ecfa5a2","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"18"},"sourceKey":"value","destinationUnit":{"$ref":"16"},"destinationKey":"eventSystem","guid":"4497fd61-2cff-4816-9fee-8325826634d4","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"12"},"sourceKey":"Direction","destinationUnit":{"$ref":"16"},"destinationKey":"moveDirection","guid":"6b1478e5-f727-4e04-9c28-0ef1ac69c17d","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 0}
+    - {fileID: 11400000, guid: 68cf8d5762c00df4b904af3a7d602ec0, type: 2}

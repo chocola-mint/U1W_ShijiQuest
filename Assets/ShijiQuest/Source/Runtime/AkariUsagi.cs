@@ -46,11 +46,11 @@ namespace ShijiQuest
         }
         private IEnumerator Script()
         {
-            yield return AttackPhase(1.0f, 0, 0, () => characterData.HP.value <= 0.5f);
+            yield return AttackPhase(1.0f, 0, 0, () => characterData.HP.GetPercentage() <= 0.5f);
             yield return TryHypnosis(); 
-            yield return AttackPhase(1, 1, 0.5f, () => characterData.HP.value <= 0.2f);
+            yield return AttackPhase(1, 1, 0.5f, () => characterData.HP.GetPercentage() <= 0.2f);
             yield return TryHypnosis(); 
-            yield return AttackPhase(0.5f, 2, 2, () => characterData.HP.value > 0);
+            yield return AttackPhase(0.5f, 2, 2, () => characterData.HP.GetPercentage() <= 0);
         }
         private IEnumerator AttackPhase(float w1, float w2, float w3, System.Func<bool> stopCondition)
         {
@@ -97,7 +97,7 @@ namespace ShijiQuest
                 yield return WaitForNextEnemyTurn();
                 if(Random.value > Mathf.Pow(sleepChance, turnsElapsed++)) 
                 {
-                    gameManager.player.value.status = CharacterData.Status.Normal;
+                    gameManager.player.value.AssignStatus(CharacterData.Status.Normal);
                     break;
                 }
             }
@@ -107,6 +107,7 @@ namespace ShijiQuest
             yield return gameManager.WaitForEvenTurn();
             action = Action.None;
             yield return gameManager.WaitForOddTurn();
+            Debug.Log(action.ToString());
         }
         private void LateUpdate() 
         {

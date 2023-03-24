@@ -34,11 +34,11 @@ namespace ShijiQuest
         }
         public IEnumerator WaitForEvenTurn()
         {
-            yield return waitUntilIsEvenTurn;
+            yield return new WaitUntil(IsEvenTurn);
         }
         public IEnumerator WaitForOddTurn()
         {
-            yield return waitUntilIsOddTurn;
+            yield return new WaitUntil(IsOddTurn);
         }
         private WaitUntil waitUntilIsEvenTurn, waitUntilIsOddTurn;
         private void Awake() 

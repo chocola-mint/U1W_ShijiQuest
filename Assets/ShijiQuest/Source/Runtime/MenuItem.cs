@@ -48,5 +48,9 @@ namespace ShijiQuest
         {
             display.text = $"{offPrefix}{itemName}";
         }
+        private void OnDisable() 
+        {
+           OnDeselect(null);
+        }
     }
 }

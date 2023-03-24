@@ -60,11 +60,12 @@ namespace ShijiQuest
         }
         public void ResetState()
         {
+            isDefending = false;
             previousStatus = status = Status.Normal;
             HP.MaxOut();
             MP.MaxOut();
             ClearMods();
-            inventory.Clear();
+            inventory?.Clear();
             strongAgainstMod.Clear();
             weakAgainstMod.Clear();
         }

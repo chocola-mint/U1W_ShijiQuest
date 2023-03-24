@@ -10,6 +10,7 @@ namespace ShijiQuest
     {
         [Required]
         public Transform spawnAnchorStart, spawnAnchorEnd;
+        public Transform deployCanvas;
         private float totalWeight = 0;
         [Min(0.01f)]
         public float mainSpawnPeriodMin = 1, mainSpawnPeriodMax = 4;
@@ -68,7 +69,7 @@ namespace ShijiQuest
             while(burstAmount-- > 0)
             {
                 Vector3 samplePosition = Vector3.Lerp(spawnAnchorStart.position, spawnAnchorEnd.position, Random.value);
-                Instantiate(prefab, transform).transform.position = samplePosition;
+                Instantiate(prefab, deployCanvas).transform.position = samplePosition;
             }
         }
 

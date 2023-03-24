@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bebaa08aee01464428a1adc853f5f086, type: 3}
   m_Name: GameOptionRanking
   m_EditorClassIdentifier: 
+  gameOptions: []

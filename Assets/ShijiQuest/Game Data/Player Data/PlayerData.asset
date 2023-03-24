@@ -14,20 +14,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   localizedName:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:5eee0ecca89e44843ae9a84c0a41df0e
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 8427155456
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  prefab: {fileID: 0}
   HP: {fileID: 11400000, guid: 106df7cfa463c164d94dff66876327b9, type: 2}
   MP: {fileID: 11400000, guid: ab6e44856fbde0c418cd120cec4458a0, type: 2}
   ATK: {fileID: 11400000, guid: ad51a93ed0b32534db283f9157d67696, type: 2}
   DEF: {fileID: 11400000, guid: d94c0c95442081c4e91f518bf9f474d7, type: 2}
   MAG: {fileID: 11400000, guid: fd8e5819c61ed114ea7d6ccb6ee49b84, type: 2}
   MDEF: {fileID: 11400000, guid: 2bbf1273918cc614785220c4779492aa, type: 2}
+  receiveDamageBuffer: 1
+  receiveHPHealBuffer: 0
+  receiveMPHealBuffer: 0
+  ATKMod: 0
+  DEFMod: 0
+  MAGMod: 0
+  MDEFMod: 0
+  isDefending: 1
+  strongAgainst: []
+  weakAgainst: []
+  strongAgainstMod: []
+  weakAgainstMod: []
   inventory: {fileID: 11400000, guid: 1c991e0d5d28332438333dfc376f9da1, type: 2}
+  spells:
+  - {fileID: 11400000, guid: e3c424a3049863d478fe3629b038bae8, type: 2}
+  - {fileID: 11400000, guid: fad189ee36429fc4ab9e1789a8038bcf, type: 2}
+  - {fileID: 11400000, guid: b054518ba373e664785aab3ba112bb9b, type: 2}
   references:
     version: 2
     RefIds: []
