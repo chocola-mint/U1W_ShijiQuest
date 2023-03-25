@@ -52,6 +52,9 @@ namespace ShijiQuest
                 onClick?.Invoke();
                 display.raycastTarget = false;
                 gameManager.ReinforceSelectLock();
+                gameManager.streamer.AddMentality(positivity - annoyance);
+                
+                
                 StartCoroutine(CoroFade());
             }
         }

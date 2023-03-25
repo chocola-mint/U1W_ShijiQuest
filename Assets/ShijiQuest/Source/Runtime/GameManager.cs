@@ -15,6 +15,7 @@ namespace ShijiQuest
         [System.NonSerialized]
         public BattleLog currentLog;
         public CharacterDataRef player, enemy;
+        public StreamerStats streamer;
         public void ResetTurnCounter() => turnCounter = 0;
         public void IncrementTurnCounter() => turnCounter++;
         public bool IsEvenTurn() => turnCounter % 2 == 0;
