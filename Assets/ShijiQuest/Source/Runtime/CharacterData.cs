@@ -62,12 +62,17 @@ namespace ShijiQuest
         {
             isDefending = false;
             previousStatus = status = Status.Normal;
+            receiveDamageBuffer = receiveHPHealBuffer = receiveMPHealBuffer = 0;
             HP.MaxOut();
             MP.MaxOut();
             ClearMods();
             inventory?.Clear();
             strongAgainstMod.Clear();
             weakAgainstMod.Clear();
+        }
+        public void ResetBuffers()
+        {
+            receiveDamageBuffer = receiveHPHealBuffer = receiveMPHealBuffer = 0;
         }
         [InlineEditor]
         public Inventory inventory;

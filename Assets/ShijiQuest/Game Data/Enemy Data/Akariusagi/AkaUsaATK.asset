@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b432e18dc3dfbc74dbf46c205d67ee66, type: 3}
   m_Name: AkaUsaATK
   m_EditorClassIdentifier: 
-  value: 20
+  value: 30

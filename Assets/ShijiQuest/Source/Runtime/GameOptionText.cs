@@ -38,6 +38,7 @@ namespace ShijiQuest
                 float progress = 1.0f - gameOptionRanking.GetRankNormalized(gameOption);
                 targetFillAmount = progress;
             }
+            else targetFillAmount = 0;
             UpdateFill();
         }
         private void UpdateFill()

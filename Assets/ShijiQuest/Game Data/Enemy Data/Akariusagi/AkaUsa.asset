@@ -28,7 +28,7 @@ MonoBehaviour:
   DEF: {fileID: 11400000, guid: 1fcac67adcb0bf74b99a580c599ca751, type: 2}
   MAG: {fileID: 11400000, guid: 39b290f551e64dd4e9a99ee063806157, type: 2}
   MDEF: {fileID: 11400000, guid: 4960565cc6d98f040904070ad48172ee, type: 2}
-  receiveDamageBuffer: 0
+  receiveDamageBuffer: 3
   receiveHPHealBuffer: 0
   receiveMPHealBuffer: 0
   ATKMod: 0
@@ -36,7 +36,8 @@ MonoBehaviour:
   MAGMod: 0
   MDEFMod: 0
   isDefending: 0
-  strongAgainst: []
+  strongAgainst:
+  - {fileID: 11400000, guid: a7c2eef7748639e41a053eca084b5032, type: 2}
   weakAgainst:
   - {fileID: 11400000, guid: 0984347d5d853b340bea7793c1adb0bc, type: 2}
   strongAgainstMod: []

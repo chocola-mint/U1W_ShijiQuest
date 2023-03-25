@@ -62,7 +62,7 @@ namespace ShijiQuest
         public void SpawnDanmakuFromBag(DanmakuBag danmakuBag)
         {
             Vector3 samplePosition = Vector3.Lerp(spawnAnchorStart.position, spawnAnchorEnd.position, Random.value);
-            Instantiate(danmakuBag.Sample(), transform).transform.position = samplePosition;
+            Instantiate(danmakuBag.Sample(), deployCanvas).transform.position = samplePosition;
         }
         public void SpawnDanmaku(GameObject prefab, int burstAmount = 1)
         {

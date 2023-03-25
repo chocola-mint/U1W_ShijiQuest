@@ -63,6 +63,10 @@ MonoBehaviour:
     m_Key: Gain EXP
     m_Metadata:
       m_Items: []
+  - m_Id: 1464233758568448
+    m_Key: Item Fail
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

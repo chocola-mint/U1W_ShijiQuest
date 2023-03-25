@@ -15,7 +15,7 @@ namespace ShijiQuest
             float baseDamage = user.trueATK;
             float defendFactor = target.isDefending ? 0.25f : 1;
             float damageVariation = Random.Range(1.0f, 1.25f);
-            float finalDamage = (baseDamage * damageVariation / target.trueDEF) * defendFactor;
+            float finalDamage = Random.Range(0, 2) + (baseDamage * damageVariation / target.trueDEF) * defendFactor;
             float targetHPBefore = target.HP.value;
             target.HP.Set(Mathf.Floor(target.HP.value - finalDamage));
             target.receiveDamageBuffer = targetHPBefore - target.HP.value;
@@ -28,7 +28,7 @@ namespace ShijiQuest
             float damageVariation = Random.Range(1.0f, 1.1f);
             float elementMod = elementType ? target.EvaluateElementMod(elementType) : 1;
             float defendFactor = target.isDefending ? 0.25f : 1;
-            float finalDamage = (baseDamage * damageVariation * elementMod / target.trueMDEF) * defendFactor;
+            float finalDamage = Random.Range(0, 2) + (baseDamage * damageVariation * elementMod / target.trueMDEF) * defendFactor;
             float targetHPBefore = target.HP.value;
             target.HP.Set(Mathf.Floor(target.HP.value - finalDamage));
             target.receiveDamageBuffer = targetHPBefore - target.HP.value;

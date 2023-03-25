@@ -13,9 +13,17 @@ MonoBehaviour:
   m_Name: Player Asleep
   m_EditorClassIdentifier: 
   entries:
-  - weight: 5
-    danmakuPrefab: {fileID: 4092620849271216771, guid: df9131c7586c4904b8503a63c551b8b9, type: 3}
   - weight: 10
-    danmakuPrefab: {fileID: 4092620849271216771, guid: 0997e51a733006c4281494acfc729c42, type: 3}
+    danmakuPrefab: {fileID: 4092620849271216771, guid: a912d2b909d2d984fbb40527a04d3345, type: 3}
   - weight: 10
-    danmakuPrefab: {fileID: 4092620849271216771, guid: 71a84258e305c2941a5b95267b086d94, type: 3}
+    danmakuPrefab: {fileID: 4092620849271216771, guid: 5a47ba3b91bc7b54f98a6d04cadc1d0c, type: 3}
+  - weight: 10
+    danmakuPrefab: {fileID: 4092620849271216771, guid: 2fc5264f71df94a488aab2c36b861a74, type: 3}
+  - weight: 10
+    danmakuPrefab: {fileID: 4092620849271216771, guid: 4d60e838349352e4c967e68dcfb94175, type: 3}
+  - weight: 10
+    danmakuPrefab: {fileID: 4092620849271216771, guid: 6a54acfe94c313641869acdcdbbfdbe3, type: 3}
+  - weight: 10
+    danmakuPrefab: {fileID: 4092620849271216771, guid: 247739d751e2b9c41bdc1ddd14d2b52e, type: 3}
+  - weight: 10
+    danmakuPrefab: {fileID: 4092620849271216771, guid: 66ff084f44b34ca42a0c1942743feebf, type: 3}

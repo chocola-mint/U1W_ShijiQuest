@@ -94,12 +94,12 @@ namespace ShijiQuest
             {
                 action = Action.HypnosisAttack;
 
-                yield return WaitForNextEnemyTurn();
                 if(Random.value > Mathf.Pow(sleepChance, turnsElapsed++)) 
                 {
                     gameManager.player.value.AssignStatus(CharacterData.Status.Normal);
                     break;
                 }
+                yield return WaitForNextEnemyTurn();
             }
         }
         private IEnumerator WaitForNextEnemyTurn()

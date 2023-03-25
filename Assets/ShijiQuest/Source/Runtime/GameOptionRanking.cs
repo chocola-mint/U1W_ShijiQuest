@@ -41,7 +41,7 @@ namespace ShijiQuest
         public float GetFirstWeightNormalized()
         {
             if(gameOptions.Count == 1) return 1;
-            float sum = gameOptions.Sum(x => x.optionWeight);
+            float sum = GetTotalWeight();
             if(Mathf.Approximately(sum, 0)) return 0;
             return gameOptions.Max(x => x.optionWeight) / sum;
         }
@@ -57,6 +57,7 @@ namespace ShijiQuest
         {
             return gameOptions[Random.Range(0, gameOptions.Count)];
         }
+        public float GetTotalWeight() => gameOptions.Sum(x => x.optionWeight);
         // Start is called before the first frame update
         void Start()
         {
