@@ -10,6 +10,10 @@ namespace ShijiQuest
         [Required]
         public StreamerStats stats;
         private Coroutine main;
+        private void Awake() 
+        {
+            stats.ResetState();
+        }
         // Start is called before the first frame update
         private void Start() 
         {
