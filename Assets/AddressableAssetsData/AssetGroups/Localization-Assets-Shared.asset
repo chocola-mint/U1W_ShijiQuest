@@ -46,6 +46,10 @@ MonoBehaviour:
     m_Address: Assets/ShijiQuest/Localization/Keywords/ItemInfo Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+  - m_GUID: 18bf285fe221fea4abeb58a7067645c7
+    m_Address: Assets/ShijiQuest/Localization/Dialog/Ending Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 56077961582cdf2438585ef7fb24a888, type: 2}
   m_SchemaSet:

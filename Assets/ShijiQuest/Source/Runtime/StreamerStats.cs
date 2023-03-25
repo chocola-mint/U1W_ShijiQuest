@@ -20,6 +20,7 @@ namespace ShijiQuest
         public float mentality = 1;
         [ReadOnly, System.NonSerialized]
         public Mood mood = Mood.Normal;
+        public bool isAngry => mood == Mood.Angry;
         [ReadOnly, System.NonSerialized]
         public int viewCount = 100, subCount = 10;
         private void Awake() 
