@@ -30,6 +30,7 @@ namespace ShijiQuest
         [Range(minAnnoyance, maxAnnoyance)]
         public float annoyance = 1.0f;
         public const float maxAnnoyance = 5, minAnnoyance = 0;
+        public AudioClip playOnClick;
         private void OnGUI() 
         {
             if(TryGetComponent<TMP_Text>(out display)) display.text = content;
@@ -52,9 +53,9 @@ namespace ShijiQuest
                 onClick?.Invoke();
                 display.raycastTarget = false;
                 gameManager.ReinforceSelectLock();
-                gameManager.streamer.AddMentality(positivity - annoyance);
+                gameManager.streamer.AddMentality(Mathf.Lerp(-0.05f, 0.025f, Mathf.InverseLerp(-5, 5, positivity - annoyance)));
                 
-                
+                AudioSource.PlayClipAtPoint(playOnClick, Vector3.zero);
                 StartCoroutine(CoroFade());
             }
         }
@@ -73,7 +74,7 @@ namespace ShijiQuest
         }
         private void Update() 
         {
-            transform.Translate(moveDirection * moveSpeed * Time.deltaTime);
+            transform.Translate((moveDirection * moveSpeed * Time.deltaTime * Screen.width) / 1920);
         }
         private void OnBecameInvisible() 
         {

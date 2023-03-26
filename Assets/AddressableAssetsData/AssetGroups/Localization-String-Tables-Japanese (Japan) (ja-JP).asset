@@ -53,12 +53,6 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-ja-JP
     - Preload
-  - m_GUID: ee51f22e1327b1f49a7b9255cbbd9f5a
-    m_Address: Ending_ja-JP
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-ja-JP
-    - Preload
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 56077961582cdf2438585ef7fb24a888, type: 2}
   m_SchemaSet:

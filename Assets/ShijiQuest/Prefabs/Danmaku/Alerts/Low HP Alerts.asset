@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2426667ed6e0d5459ec9f03f1a27e04, type: 3}
+  m_Name: Low HP Alerts
+  m_EditorClassIdentifier: 
+  entries:
+  - weight: 2
+    danmakuPrefab: {fileID: 2065575194885791919, guid: db853e46761c96a47be2ae4821e21193, type: 3}
+  - weight: 2
+    danmakuPrefab: {fileID: 2065575194885791919, guid: 1411104a768678143b8e70eae1bdf236, type: 3}
+  - weight: 1
+    danmakuPrefab: {fileID: 2065575194885791919, guid: 2bf5bf300d8bf964c9375481f6791ce6, type: 3}
+  - weight: 1
+    danmakuPrefab: {fileID: 2065575194885791919, guid: 72d79aaf7bcf4c24796f76b77eb14ac4, type: 3}

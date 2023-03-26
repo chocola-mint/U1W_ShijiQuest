@@ -36,7 +36,9 @@ namespace ShijiQuest
         }
         public void AddMentality(float value)
         {
-            mentality = Mathf.Clamp01(mentality + value / 3.0f);
+            mentality = Mathf.Clamp01(mentality + value);
         }
+        public void AddViews(int count = 1) => viewCount += count;
+        public void AddSubs(int count = 1) => subCount += count;
     }
 }

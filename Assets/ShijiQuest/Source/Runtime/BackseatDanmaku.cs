@@ -16,6 +16,9 @@ namespace ShijiQuest
         {
             GetComponent<Danmaku>().onClick += 
             () => desiredOption.AddWeight(addWeight);
+
+            // Partial influence by just appearing.
+            desiredOption.AddWeight(addWeight * 0.25f);
         }
     }
 }

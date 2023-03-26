@@ -27,3 +27,9 @@ MonoBehaviour:
     danmakuPrefab: {fileID: 4092620849271216771, guid: 247739d751e2b9c41bdc1ddd14d2b52e, type: 3}
   - weight: 10
     danmakuPrefab: {fileID: 4092620849271216771, guid: 66ff084f44b34ca42a0c1942743feebf, type: 3}
+  - weight: 10
+    danmakuPrefab: {fileID: 4092620849271216771, guid: bda27f9a1acb5ce4086398d42dcd017d, type: 3}
+  - weight: 10
+    danmakuPrefab: {fileID: 4092620849271216771, guid: 0580d2fe97cc5c543a1e1327b2a1794c, type: 3}
+  - weight: 10
+    danmakuPrefab: {fileID: 4092620849271216771, guid: 234b6cf62b41c8d4681b8c90aea63e39, type: 3}

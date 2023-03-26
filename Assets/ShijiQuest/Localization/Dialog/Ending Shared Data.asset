@@ -23,6 +23,18 @@ MonoBehaviour:
     m_Key: Ragequit 2
     m_Metadata:
       m_Items: []
+  - m_Id: 124154679144448
+    m_Key: Ending 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 125051933044736
+    m_Key: Ending 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 207770306228224
+    m_Key: Maybe Retry
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

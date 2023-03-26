@@ -16,7 +16,11 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 8d9c8f2bba3b94c46bc727e201208047
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: ea1f2da2d235fb14492f14e1df0247cb
+    m_Address: Assets/ShijiQuest/Localization/Localization Settings.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 56077961582cdf2438585ef7fb24a888, type: 2}
   m_SchemaSet:

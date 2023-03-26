@@ -60,12 +60,12 @@ MonoBehaviour:
       m_Items:
       - rid: 862237484720062535
   - m_Id: 510907239903232
-    m_Localized: "{game.PLAYER}\u3000\u304C\u3000\u306A\u3093\u3068\u304B\u8010\u3048\u305F\uFF01"
+    m_Localized: "{game.PLAYER}\u3000\u306F\u3000\u306A\u3093\u3068\u304B\u8010\u3048\u305F\uFF01"
     m_Metadata:
       m_Items:
       - rid: 862237484720062535
   - m_Id: 516667709599744
-    m_Localized: "{game.PLAYER}\u3000\u304C\u3000\u3084\u3063\u3068\u8D77\u304D\u305F\uFF01\n\u304A\u306F\u3088\u3046\uFF01"
+    m_Localized: "{game.PLAYER}\u3000\u306F\u3000\u3084\u3063\u3068\u8D77\u304D\u305F\uFF01\n\u304A\u306F\u3088\u3046\uFF01"
     m_Metadata:
       m_Items:
       - rid: 862237484720062535

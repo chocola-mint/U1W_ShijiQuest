@@ -24,6 +24,7 @@ namespace ShijiQuest
         public bool currentMessageDone => messageCharPointer > pendingMessage.Length;
         public bool isCleared => display.text.Length == 0 && pendingMessage.Length == 0;
         public bool isDoneAndCleared => done && isCleared;
+        public AudioClip playOnPrintChar;
         public void Enqueue(string message)
         {
             var textInfo = display.GetTextInfo(message);
@@ -71,6 +72,8 @@ namespace ShijiQuest
             {
                 bool isNewLine = pendingMessage[messageCharPointer - 1] == '\n';
                 display.text = pendingMessage.Substring(0, messageCharPointer++);
+                if(playOnPrintChar)
+                    AudioSource.PlayClipAtPoint(playOnPrintChar, Vector3.zero);
                 nextPrintCharTime += actualPrintCharPeriod;
                 if(isNewLine) nextPrintCharTime += actualLinePausePeriod;
             }

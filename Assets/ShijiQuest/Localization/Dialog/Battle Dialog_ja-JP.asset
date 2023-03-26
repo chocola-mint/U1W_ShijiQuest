@@ -25,37 +25,37 @@ MonoBehaviour:
       m_Items:
       - rid: 862237484720062530
   - m_Id: 116076676132864
-    m_Localized: "{game.PLAYER}\u3000\u304C\u3000\u5927\u5263\u3000\u3067\n\u653B\u6483\u3057\u305F\uFF01"
+    m_Localized: "{game.PLAYER}\u3000\u306F\u3000\u5927\u5263\u3000\u3067\n\u653B\u6483\u3057\u305F\uFF01"
     m_Metadata:
       m_Items:
       - rid: 862237484720062530
   - m_Id: 118411469008896
-    m_Localized: "{game.PLAYER}\u3000\u304C\u3000\u5B88\u308A\u3092\u56FA\u3081\u305F\uFF01"
+    m_Localized: "{game.PLAYER}\u3000\u306F\u3000\u5B88\u308A\u3092\u56FA\u3081\u305F\uFF01"
     m_Metadata:
       m_Items:
       - rid: 862237484720062530
   - m_Id: 119224278986752
-    m_Localized: "{game.PLAYER}\u3000\u304C\u3000{game.ITEM}\u3000\u3092\u4F7F\u3063\u305F\uFF01"
+    m_Localized: "{game.PLAYER}\u3000\u306F\u3000{game.ITEM}\u3000\u3092\u4F7F\u3063\u305F\uFF01"
     m_Metadata:
       m_Items:
       - rid: 862237484720062530
   - m_Id: 119393477210112
-    m_Localized: "{game.TARGET}\u3000\u304C\u3000{game.MAGIC}\u3000\u3092\u5531\u3048\u305F\uFF01"
+    m_Localized: "{game.PLAYER}\u3000\u306F\u3000{game.MAGIC}\u3000\u3092\u5531\u3048\u305F\uFF01"
     m_Metadata:
       m_Items:
       - rid: 862237484720062530
   - m_Id: 119608628228096
-    m_Localized: "{game.TARGET}\u3000\u304C\u3000{game.DAMAGE}\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u98DF\u3089\u3063\u305F\uFF01"
+    m_Localized: "{game.TARGET}\u3000\u306F\u3000{game.DAMAGE}\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u98DF\u3089\u3063\u305F\uFF01"
     m_Metadata:
       m_Items:
       - rid: 862237484720062530
   - m_Id: 119896600752128
-    m_Localized: "{game.TARGET}\u3000\u304C\u3000{game.HEALHP}\u3000\uFF28\uFF30\u3092\u56DE\u5FA9\u3057\u305F\uFF01"
+    m_Localized: "{game.TARGET}\u3000\u306F\u3000{game.HEALHP}\u3000\uFF28\uFF30\u3092\u56DE\u5FA9\u3057\u305F\uFF01"
     m_Metadata:
       m_Items:
       - rid: 862237484720062530
   - m_Id: 120137282498560
-    m_Localized: "{game.TARGET}\u3000\u304C\u3000{game.HEALMP}\u3000\uFF2D\uFF30\u3092\u56DE\u5FA9\u3057\u305F\uFF01"
+    m_Localized: "{game.TARGET}\u3000\u306F\u3000{game.HEALMP}\u3000\uFF2D\uFF30\u3092\u56DE\u5FA9\u3057\u305F\uFF01"
     m_Metadata:
       m_Items:
       - rid: 862237484720062530
@@ -75,7 +75,7 @@ MonoBehaviour:
       m_Items:
       - rid: 862237484720062530
   - m_Id: 127013571276800
-    m_Localized: "{game.PLAYER}\u3000\u304C\u3000{game.GAINEXP}\u3000\u7D4C\u9A13\u5024\u3092\u3000\u3082\u3089\u3063\u305F\uFF01"
+    m_Localized: "{game.PLAYER}\u3000\u306F\u3000{game.GAINEXP}\u3000\u7D4C\u9A13\u5024\u3092\u3000\u3082\u3089\u3063\u305F\uFF01"
     m_Metadata:
       m_Items:
       - rid: 862237484720062530

@@ -18,7 +18,7 @@ namespace ShijiQuest
         }
         private float weightSum = 0;
         public List<Entry> entries = new();
-        private void Awake() 
+        private void OnEnable() 
         {
             weightSum = 0;
             foreach(var entry in entries) weightSum += entry.weight;

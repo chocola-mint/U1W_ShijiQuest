@@ -192,6 +192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 11400000, guid: 68cf8d5762c00df4b904af3a7d602ec0, type: 2}
+  content: 
   fadeCurve:
     serializedVersion: 2
     m_Curve:
@@ -218,6 +219,9 @@ MonoBehaviour:
     m_RotationOrder: 4
   fadeDuration: 0.5
   moveSpeed: 700
+  positivity: 2.5
+  annoyance: 1
+  playOnClick: {fileID: 8300000, guid: ebc4091142c439e4c9f159f54a34efe0, type: 3}
 --- !u!114 &-7389013616375165031
 MonoBehaviour:
   m_ObjectHideFlags: 0

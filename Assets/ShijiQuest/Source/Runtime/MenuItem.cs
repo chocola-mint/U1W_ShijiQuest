@@ -19,6 +19,7 @@ namespace ShijiQuest
         [Required]
         public string onPrefix = "◎";
         public event System.Action onSelect, onSubmit;
+        public AudioClip playOnSelect, playOnSubmit;
         private void Awake() 
         {
             TryGetComponent<TMP_Text>(out display);
@@ -37,11 +38,13 @@ namespace ShijiQuest
         public void OnSubmit(BaseEventData eventData)
         {
             onSubmit?.Invoke();
+            AudioSource.PlayClipAtPoint(playOnSubmit, Vector3.zero);
         }
         public void OnSelect(BaseEventData eventData)
         {
             display.text = $"{onPrefix}{itemName}";
             onSelect?.Invoke();
+            AudioSource.PlayClipAtPoint(playOnSelect, Vector3.zero);
         }
 
         public void OnDeselect(BaseEventData eventData)

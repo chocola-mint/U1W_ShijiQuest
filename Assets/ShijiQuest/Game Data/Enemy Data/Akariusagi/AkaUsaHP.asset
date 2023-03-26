@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba6e3598f540f947992d5c16c49a4fc, type: 3}
   m_Name: AkaUsaHP
   m_EditorClassIdentifier: 
-  value: 7
+  value: 0
   max: {fileID: 11400000, guid: 308e29d601f6f184bab20d044166dae0, type: 2}

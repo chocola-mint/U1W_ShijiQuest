@@ -194,6 +194,8 @@ MonoBehaviour:
   itemName: NAME HERE
   offPrefix: "\u30FB"
   onPrefix: "\u25CE"
+  playOnSelect: {fileID: 8300000, guid: 28d5d66a503745f44a60fcb3f830fb64, type: 3}
+  playOnSubmit: {fileID: 8300000, guid: c9777e5532c4458468df9c9519a44ad3, type: 3}
 --- !u!114 &6525004371090645762
 MonoBehaviour:
   m_ObjectHideFlags: 0

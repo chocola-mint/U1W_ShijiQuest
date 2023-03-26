@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enabled: 1
   distributionList:
-    distributions: []
+    distributions:
+    - distributionName: unityroom
+      enabled: 1
   architectures:
   - target: 20
     name: WebGL
@@ -44,7 +46,7 @@ MonoBehaviour:
     buildCounter: 0
     buildVersion: 
     versionTemplate: 1.0.0.$BUILD
-    autoGenerate: 1
+    autoGenerate: 0
     syncWithPlayerSettings: 0
   _releaseTypeList:
     releaseTypes:
@@ -55,39 +57,78 @@ MonoBehaviour:
       buildOptions: 0
       customDefines: 
       sceneList:
-        enabledScenes: []
+        enabledScenes:
+        - fileGUID: 8c9cfa26abfee488c85f1582747f6a02
+        - fileGUID: 9f39a733e7c71534bab5cc26b1138aa3
   _platformList:
     platforms:
     - {fileID: -1791305271238795335}
   _projectConfigurations:
     configSet:
-      _Buckets: ffffffff0100000002000000
-      _HashCodes: 6d38f6476da5e2352d6dfd48
-      _Next: ffffffffffffffff00000000
-      _Count: 3
-      _Version: 3
+      _Buckets: 02000000ffffffff03000000ffffffffffffffffffffffffffffffff
+      _HashCodes: aede082c6d38f6476da5e2352d6dfd48000000000000000000000000
+      _Next: ffffffffffffffff0100000000000000000000000000000000000000
+      _Count: 4
+      _Version: 4
       _FreeList: -1
       _FreeCount: 0
       _Keys:
+      - Release/WebGL/WebGL/unityroom
       - Release/WebGL/WebGL
       - Release/WebGL
       - Release
+      - 
+      - 
+      - 
       _Values:
       - enabled: 1
         childKeys: []
+      - enabled: 1
+        childKeys:
+        - Release/WebGL/WebGL/unityroom
       - enabled: 1
         childKeys:
         - Release/WebGL/WebGL
       - enabled: 1
         childKeys:
         - Release/WebGL
+      - enabled: 1
+        childKeys: []
+      - enabled: 1
+        childKeys: []
+      - enabled: 1
+        childKeys: []
     showViewOptions: 0
     showConfigs: 0
     showBuildInfo: 0
     hideDisabled: 0
     treeView: 0
-    selectedKeyChain: 
+    selectedKeyChain: Release/WebGL/WebGL/unityroom
   _preBuildActions:
     buildActions: []
   _postBuildActions:
-    buildActions: []
+    buildActions:
+    - {fileID: 7351602422029075257}
+--- !u!114 &7351602422029075257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de0f7a04940394844a505e73c3eb8cec, type: 3}
+  m_Name: ZipFileOperation
+  m_EditorClassIdentifier: 
+  actionType: 1
+  actionName: ZipFileOperation
+  note: 
+  actionEnabled: 1
+  configureEditor: 0
+  filter:
+    condition: 0
+    clauses: []
+  inputPath: $BUILDPATH
+  outputPath: $BUILDPATH
+  outputFileName: $PRODUCT_NAME-$RELEASE_TYPE-$YEAR_$MONTH_$DAY.zip

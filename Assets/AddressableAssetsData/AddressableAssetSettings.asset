@@ -48,6 +48,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7d0c2f4c44167664892ff5d639adfd63, type: 2}
   - {fileID: 11400000, guid: ee77539597d2687459203d777412f5fe, type: 2}
   - {fileID: 11400000, guid: 050c170994290414b8e8bac9cee0ab64, type: 2}
+  - {fileID: 11400000, guid: db49bc64d4b731a42bfc3eac01f53d4b, type: 2}
   m_BuildSettings:
     m_CompileScriptsInVirtualMode: 0
     m_CleanupStreamingAssetsAfterBuilds: 1
@@ -68,7 +69,7 @@ MonoBehaviour:
       - m_Id: 4256d332bdd9e8e409fd69a66975daba
         m_Value: ServerData/[BuildTarget]
       - m_Id: 561a5e55c6d526548be233e518ee33c9
-        m_Value: http://[PrivateIpAddress]:[HostingServicePort]
+        m_Value: https://github.com/chocola-mint/ShijiQuest_Bucket:[HostingServicePort]
     m_ProfileEntryNames:
     - m_Id: c2305cdcd35d34641954c17ecc69565c
       m_Name: BuildTarget

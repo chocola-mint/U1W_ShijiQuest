@@ -16,6 +16,8 @@ namespace ShijiQuest
         public Image angryImage;
         [Required]
         public TMP_Text moodValue, mentalityValue, viewCountValue, subCountValue;
+        private int shownViewCount = 0;
+        private int shownSubCount = 0;
         public LocalizedString moodValueString;
         [Required]
         public Sprite angrySpriteSmall, angrySpriteBig;
@@ -43,10 +45,14 @@ namespace ShijiQuest
         // Update is called once per frame
         void LateUpdate()
         {
+            if(stats.viewCount != shownViewCount)
+                shownViewCount += (int) Mathf.Sign(stats.viewCount - shownViewCount);
+            if(stats.subCount != shownSubCount)
+                shownSubCount += (int) Mathf.Sign(stats.subCount - shownSubCount);
             moodValueString.TableEntryReference = stats.mood.ToString();
             mentalityValue.text = $"{Mathf.CeilToInt(stats.mentality * 100)}%";
-            viewCountValue.text = $"{stats.viewCount}";
-            subCountValue.text = $"{stats.subCount}";
+            viewCountValue.text = $"{shownViewCount}";
+            subCountValue.text = $"{shownSubCount}";
             if(stats.mood == StreamerStats.Mood.Irritated)
             {
                 angryImage.enabled = true;
