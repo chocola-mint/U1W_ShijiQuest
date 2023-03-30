@@ -8,3 +8,6 @@ This project is notable for its experimental use of Visual Scripting with C#. Vi
 ## Notes
 * This project uses the Localization package, which depends on Addressables, and so I was forced to host the StreamingAssets folder on [another GitHub repository](https://github.com/chocola-mint/ShijiQuest_Bucket).
 * This project is a hard fork of my game jam template, [Freeheart](https://github.com/chocola-mint/Freeheart). Though it doesn't actually use any of Freeheart's features. ~~Oops.~~
+* Notable state machines:
+  * Game (Scene) > Scene Setup > Game Canvas
+  * Akariusagi (Prefab)
