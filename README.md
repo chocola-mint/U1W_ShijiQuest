@@ -1,23 +1,10 @@
-# Freeheart
+# シジ・クエスト (SHIJI Quest)
 
 ## About
-Freeheart is a game framework for Unity, primarily used for game jams, but also small projects in general.
+Entry for the [unity1week game jam](https://unityroom.com/unity1weeks/58). You can play it [here](https://unityroom.com/games/shijiquest).
 
-Since this is mostly a personal framework, backward-compatibility will not be a focus. Expect API-breaking changes across versions.
+This project is notable for its experimental use of Visual Scripting with C#. Visual Scripting's "intended usage", as one might say.
 
-## Features
-
-* A UI system designed to support transitions easily, allowing mix-mash of different approaches such as Unity Animations and tweening.
-* [YarnSpinner](https://github.com/YarnSpinnerTool/YarnSpinner-Unity) extensions.
-
-## Installation
-
-Distributed as `.unitypackage`s. See releases.
-
-You're expected to install dependencies separately:
-* [TriInspector](https://github.com/codewriter-packages/Tri-Inspector)
-* [YarnSpinner-Unity](https://github.com/YarnSpinnerTool/YarnSpinner-Unity)
-
-## History
-
-Freeheart is a rewrite and refactored version of the game framework seen in my game, [Sorting Battle](https://github.com/chocola-mint/Sorting-Battle).
+## Notes
+* This project uses the Localization package, which depends on Addressables, and so I was forced to host the StreamingAssets folder on [another GitHub repository](https://github.com/chocola-mint/ShijiQuest_Bucket).
+* This project is a hard fork of my game jam template, [Freeheart](https://github.com/chocola-mint/Freeheart). Though it doesn't actually use any of Freeheart's features. ~~Oops.~~
